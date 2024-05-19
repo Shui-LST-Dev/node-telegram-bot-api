@@ -7,12 +7,6 @@
     "example": "examples",
     "test": "test"
   },
-  "keywords": [
-    "telegram",
-    "telegram bot",
-    "telegram bot api",
-    "bot"
-  ],
   "scripts": {
     "gen-doc": "echo 'WARNING: `npm run gen-doc` is deprecated. Use `npm run doc` instead.' && npm run doc",
     "doc": "jsdoc2md --files src/telegram.js --template doc/api.hbs > doc/api.md",
@@ -31,12 +25,14 @@
   "dependencies": {
     "@cypress/request": "^3.0.1",
     "@cypress/request-promise": "^5.0.0",
+    "@google-cloud/pubsub": "^4.4.0",
     "array.prototype.findindex": "^2.0.2",
     "bl": "^1.2.3",
     "debug": "^3.2.7",
     "eventemitter3": "^3.0.0",
     "file-type": "^3.9.0",
     "mime": "^1.6.0",
+    "node-telegram-bot-api": "^0.65.1",
     "pump": "^2.0.0"
   },
   "devDependencies": {
@@ -52,7 +48,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.26.0",
     "concat-stream": "^1.6.0",
-    "eslint": "^2.13.1",
+    "eslint": ">=2.13.1",
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-mocha": "^4.11.0",
     "is": "^3.2.1",
